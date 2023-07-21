@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primer HTML forme</title>
+        <meta charset="utf-8">
+        <style type="text/css"> 
+           table{ 
+                border-top: 1px solid white;
+                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                font-size: 12px;
+            }
+            th{
+                text-align:left;
+                font-weight: bold;
+                border: 1px solid black;
+            }
+            td, tr{
+                font-weight: normal;
+                border: 1px solid black;
+            }
+            table tr:nth-child(1){
+                background-color: lightblue;
+            }
+            caption{
+                background-color: grey;
+                background-clip: content-box;
+                font-weight: bold;
+                padding-top: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+                border-top: 1px solid black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>RASPORED ČASOVA</caption>
+            <tr>
+                <th></th>                
+                <th>PON</th>
+                <th>UTO</th>
+                <th>SRE</th>
+                <th>ČET</th>
+                <th>PET</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <td>Muzičko</td>
+                <td>Hemija</td>
+                <td>Likovno</td>
+                <td>Srpski</td>
+                <td>Matematika</td>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <td>Matematika</td>
+                <td>Srpski</td>
+                <td>Srpski</td>
+                <td>Fizičko</td>
+                <td>Srpski</td>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <td>Engleski</td>
+                <td rowspan="2">Matematika</td>
+                <td>Fizika</td>
+                <td>Hemija</td>
+                <td>Fizika</td>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <td>Fizika</td>
+                <td>Engleski</td>
+                <td>Biologija</td>
+                <td>Informatika</td>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <td>Fizičko</td>
+                <td>Biologija</td>
+                <td>Istorija</td>
+                <td>Francuski</td>
+                <td>Fizičko</td>
+            </tr>
+        </table>
+    </body>
+</html>
